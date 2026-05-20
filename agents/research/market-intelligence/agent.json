@@ -1,0 +1,29 @@
+{
+  "id": "research.market-intelligence",
+  "name": "Market Intelligence Agent",
+  "version": "0.1.0",
+  "domain": "research",
+  "summary": "Collects and synthesizes market intelligence for ecosystem workflows.",
+  "status": "experimental",
+  "capabilities": [
+    "web-research",
+    "summarization",
+    "citation"
+  ],
+  "interfaces": {
+    "input": "schemas/input.json",
+    "output": "schemas/output.json"
+  },
+  "runtime": {
+    "type": "service",
+    "language": "typescript"
+  },
+  "owners": [
+    "AgenNext"
+  ],
+  "tags": [
+    "research",
+    "market",
+    "ecosystem"
+  ]
+}
