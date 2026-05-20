@@ -1,0 +1,24 @@
+{
+  "name": "agennext-agent-library",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent Library platform for the AgenNext Agent Ecosystem.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p packages/registry/tsconfig.json",
+    "validate": "node packages/registry/dist/cli.js validate",
+    "dev:validate": "tsx packages/registry/src/cli.ts validate"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1"
+  }
+}
